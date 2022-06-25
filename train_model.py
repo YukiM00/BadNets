@@ -116,8 +116,8 @@ parser.add_argument('--poison_rate', default=0.1, type=float)
 parser.add_argument('--targeted_class', default=0, type=int,help='-1:non-targeted')
 args = parser.parse_args()
 print(args)
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
-os.environ["CUDA_VISIBLE_DEVICES"] = '0'
+# os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+# os.environ["CUDA_VISIBLE_DEVICES"] = '0'
 
 os.makedirs('models',exist_ok=True)
 os.makedirs('samples',exist_ok=True)
